@@ -8,47 +8,18 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
-  public folder: string;
-  today: string;
-  profileForm: FormGroup;
-  constructor(private activatedRoute: ActivatedRoute,private formBuilder: FormBuilder,private router: Router) {
+  
+  constructor(private router: Router) {
     
    }
 
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
-    const now = new Date();
-   this.today = now.toISOString();
-
-  this.profileForm = this.formBuilder.group({
-    name: ['',],
-    email: [''],
-    visit: [''],
-    pVisit: [''],
-    date: [''],
-    entry: [''],
-    exit: ['']
-    });
+  }
+  signUp(){
+    this.router.navigate(['/singup']);
 
   }
-  get f() { return this.profileForm.controls; }
-  myDate: String = new Date().toLocaleDateString();
-  
-  submit(){
-    let navigationExtras: NavigationExtras = {
-      queryParams: {
-        name: this.profileForm.controls['name'].value,
-        email: this.profileForm.controls['email'].value,
-        visit: this.profileForm.controls['visit'].value,
-        pVisit: this.profileForm.controls['pVisit'].value,
-        date: this.profileForm.controls['date'].value,
-        entry: this.profileForm.controls['entry'].value,
-        exit: this.profileForm.controls['exit'].value,
-
-      }
-    };
-    
-    //this.router.navigate(['/home'],navigationExtras);
+  signIn(){
+    this.router.navigate(['/login']);
   }
-  
 }

@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'folder/Inbox',
-  //   pathMatch: 'full'
-  // },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'folder/Inbox',
     pathMatch: 'full'
   },
+  // {
+  //   path: '',
+  //   redirectTo: 'login',
+  //   pathMatch: 'full'
+  // },
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
@@ -59,7 +59,8 @@ const routes: Routes = [
   {
     path: 'divers-list',
     loadChildren: () => import('./school/divers-list/divers-list.module').then( m => m.DiversListPageModule)
-  },  {
+  },
+  {
     path: 'view-list-modal',
     loadChildren: () => import('./modalWindow/view-list-modal/view-list-modal.module').then( m => m.ViewListModalPageModule)
   }

@@ -1,46 +1,9 @@
-.clr{
-    width: 100%;
-    height:60px;
-    background: var(--ion-color-medium);
+.camera-css{
+    padding-top: 50px;
+    font-size: 120px;
 }
+.sign-up{
 
-.UserNameIcon{
-    margin-top: 20px;
-   color: var(--ion-color-primary);
-   font-size: 18px;
-
-}
-ion-card{
-    border-radius: 20px;
-    margin-top: -20px;
-    margin-left: 25px;
-    margin-right: 25px;
-    // padding-bottom: 30px;
-    // padding-top: 30px;
-}
-ion-img{
-    height: 80px;
-    // width: 55px;
-    
-}.button-gradient{
-    --background: var(--ion-button-gradient);
-    width: 188px;
-    height: 50px;
-    margin-top: 24px;
-   
-}
-.account{
- margin-top: 15px;
-}
-.card-content-md {
-   
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.goToBack{
-    margin-left: 25px;
-    margin-top: 8px;
-}
+    color: #fff;
+    background: orange;
+    }
