@@ -16,6 +16,10 @@ const routes: Routes = [
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
   // {
   //   path: 'home',
   //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
@@ -31,42 +35,16 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },  {
+    path: 'forgot-password',
+    loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
-    path: 'photo-upload',
-    loadChildren: () => import('./school/photo-upload/photo-upload.module').then( m => m.PhotoUploadPageModule)
+    path: 'enter-otp',
+    loadChildren: () => import('./enter-otp/enter-otp.module').then( m => m.EnterOtpPageModule)
   },
-  {
-    path: 'persons-registor',
-    loadChildren: () => import('./school/persons-registor/persons-registor.module').then( m => m.PersonsRegistorPageModule)
-  },
-  {
-    path: 'childrens',
-    loadChildren: () => import('./school/childrens/childrens.module').then( m => m.ChildrensPageModule)
-  },
-  {
-    path: 'childrens-list',
-    loadChildren: () => import('./school/childrens-list/childrens-list.module').then( m => m.ChildrensListPageModule)
-  },
-  {
-    path: 'workers-list',
-    loadChildren: () => import('./school/workers-list/workers-list.module').then( m => m.WorkersListPageModule)
-  },
-  {
-    path: 'management-list',
-    loadChildren: () => import('./school/management-list/management-list.module').then( m => m.ManagementListPageModule)
-  },
-  {
-    path: 'divers-list',
-    loadChildren: () => import('./school/divers-list/divers-list.module').then( m => m.DiversListPageModule)
-  },
-  {
-    path: 'view-list-modal',
-    loadChildren: () => import('./modalWindow/view-list-modal/view-list-modal.module').then( m => m.ViewListModalPageModule)
-  }
 
-
-
+  
 
 ];
 

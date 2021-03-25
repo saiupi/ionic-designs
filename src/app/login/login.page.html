@@ -5,7 +5,9 @@
 </ion-header> -->
 
 <ion-content>
-
+  <div (click)="goToBack()" class="goToBack">
+    <ion-button shape="round" fill="outline">BACK</ion-button>
+  </div>
   <div align="center" class="camera-css">
     <ion-img src="assets\food.png"></ion-img>
   </div>
@@ -17,9 +19,11 @@
     <ion-label position="floating">EMAIL</ion-label>
     <ion-input></ion-input>
   </ion-item>
-  <div align="center">
+  <ion-item lines="none">
+    <ion-label slot="end" (click)="forgotPassword()">Forgot Password</ion-label>
+  </ion-item>
+  <div align="center" class="mt-5">
       <ion-button  fill="outline" class="sign-up" (click)="submit()">Signin</ion-button>
   </div>
- 
 </ion-content>
 

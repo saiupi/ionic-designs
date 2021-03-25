@@ -13,7 +13,7 @@ export class LoginPage implements OnInit {
   constructor(private router: Router,private menuCtrl: MenuController) { }
 
   ngOnInit() {
-    // this.menuCtrl.enable(false); // or true 
+     this.menuCtrl.enable(false); // or true 
     console.log(environment.production);
     
     // console.log(environment.message);
@@ -23,9 +23,15 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/singup']);
 
   }
+  forgotPassword(){
+    this.router.navigate(['/forgot-password']);
+  }
   goToDashBoard(){
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/dashboard'])
 
+  }
+  goToBack(){
+    this.router.navigate(['/home']);
 
   }
 

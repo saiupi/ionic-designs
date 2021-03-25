@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ViewListModalPageRoutingModule } from './view-list-modal-routing.module';
+import { EnterOtpPageRoutingModule } from './enter-otp-routing.module';
 
-import { ViewListModalPage } from './view-list-modal.page';
+import { EnterOtpPage } from './enter-otp.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ViewListModalPageRoutingModule
+    EnterOtpPageRoutingModule
   ],
-  declarations: [ViewListModalPage]
+  declarations: [EnterOtpPage]
 })
-export class ViewListModalPageModule {}
+export class EnterOtpPageModule {}

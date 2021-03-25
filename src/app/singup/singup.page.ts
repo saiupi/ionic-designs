@@ -13,8 +13,9 @@ export class SingupPage implements OnInit {
   ngOnInit() {
   }
   goToBack(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['/home']);
 
   }
+ 
 
 }
