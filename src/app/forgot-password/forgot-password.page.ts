@@ -16,6 +16,9 @@ export class ForgotPasswordPage implements OnInit {
     this.router.navigate(['/login']);
 
   }
+  otp(){
+    this.router.navigate(['/enter-otp']);
+  }
 
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-enter-otp',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnterOtpPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+otp(){
 
+    this.router.navigate(['/login']);
+  
+}
 }

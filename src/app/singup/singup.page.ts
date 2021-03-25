@@ -16,6 +16,10 @@ export class SingupPage implements OnInit {
     this.router.navigate(['/home']);
 
   }
+  submit(){
+    this.router.navigate(['/login']);
+
+  }
  
 
 }

@@ -17,40 +17,12 @@ export class DashboardPage implements OnInit {
 
   }
   
-  slideOpts = {
-    autoplay: {
-    delay: 1500
-    }
-  };
+
   
-  login(){
+  logout(){
     this.router.navigate(['/login']);
 
   }
-  upload(){
-    this.router.navigate(['/photo-upload']);
  
-  }
-  registor(){
-    this.router.navigate(['/persons-registor']);
-  }
-  childern(){
-    this.router.navigate(['/childrens-list']);
-
-  }
-  mangement(){
-    
-    this.router.navigate(['/management-list']);
-
-  }
-  workers(){
-    this.router.navigate(['/workers-list']);
-
-  }
-  diver(){
-    this.router.navigate(['/divers-list']);
-
-  }
-  
 
 }
