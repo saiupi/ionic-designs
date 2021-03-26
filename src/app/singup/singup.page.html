@@ -5,15 +5,15 @@
 </ion-header> -->
 
 <ion-content padding="true">
-  <div (click)="goToBack()" class="goToBack" *ngIf="!base64Image">
+  <div (click)="goToBack()" class="goToBack">
     <ion-button shape="round" fill="outline">BACK</ion-button>
   </div>
-  <div align="center" class="camera-css" (click)="takePictures()" >
+  <div align="center" class="camera-css">
     <ion-icon name="camera-outline"></ion-icon>
   </div>
-  <div align="center" class="camera-css" >
+  <!-- <div align="center" class="camera-css" >
     <img [src]="base64Image" *ngIf="base64Image" />
-  </div>
+  </div> -->
   <ion-item>
     <ion-label position="floating">NAME</ion-label>
     <ion-input></ion-input>
@@ -22,15 +22,15 @@
     <ion-label position="floating">EMAIL</ion-label>
     <ion-input></ion-input>
   </ion-item>
-  
-<div class="checkbox-css">
-  <input type="checkbox" >
-  <label for="vehicle1"> &nbsp; i agree with Terms And Conditions Icone</label>
 
-</div>
-   
+  <div class="checkbox-css">
+    <input type="checkbox">
+    <label for="vehicle1"> &nbsp; i agree with Terms And Conditions Icone</label>
 
-   <div align="center" class="mt-5">
+  </div>
+
+
+  <div align="center" class="mt-5">
 
     <ion-button fill="outline" class="sign-up" (click)="goToOtp()">Sign Up</ion-button>
 
@@ -38,7 +38,7 @@
 
 </ion-content>
 
-<ion-footer  align="center">
+<ion-footer align="center">
   <ion-toolbar>
     <ion-title>i havee an <span class="account-radius" (click)="goToLogin()">account</span></ion-title>
   </ion-toolbar>
