@@ -1,40 +1,37 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header> -->
+
 
 <ion-content padding="true">
-  <div (click)="goToBack()" class="goToBack">
-    <ion-button shape="round" fill="outline">BACK</ion-button>
-  </div>
-  <div align="center" class="camera-css">
-    <ion-icon name="camera-outline"></ion-icon>
-  </div>
-  <!-- <div align="center" class="camera-css" >
+  
+  <ion-card class="backgroun-image" >
+    <div (click)="goToBack()" class="goToBack">
+      <!-- <ion-icon name="arrow-back"></ion-icon> -->
+          <span>  Back</span>
+    </div>
+    <div align="center" class="camera-css">
+      <ion-icon name="camera-outline"></ion-icon>
+    </div>
+    <!-- <div align="center" class="camera-css" >
     <img [src]="base64Image" *ngIf="base64Image" />
   </div> -->
-  <ion-item>
-    <ion-label position="floating">NAME</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">EMAIL</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
+  </ion-card>
+  <ion-list class="text-align">
+    <ion-item>
+      <ion-label position="floating">NAME</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">EMAIL</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  
   <div class="checkbox-css">
     <input type="checkbox">
     <label for="vehicle1"> &nbsp; i agree with Terms And Conditions Icone</label>
-
   </div>
-
-
   <div align="center" class="mt-5">
-
-    <ion-button fill="outline" class="sign-up" (click)="goToOtp()">Sign Up</ion-button>
-
-  </div>
+    <button  class="sign-up" (click)="goToOtp()">SIGN UP</button>  </div>
 
 </ion-content>
 
