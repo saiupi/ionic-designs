@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content>
+<ion-content padding="true">
   <div (click)="goToBack()" class="goToBack">
     <ion-button shape="round" fill="outline">BACK</ion-button>
   </div>
@@ -19,19 +19,24 @@
     <ion-label position="floating">EMAIL</ion-label>
     <ion-input></ion-input>
   </ion-item>
-  <ion-item lines="none">
-    <ion-label>
-      <ion-checkbox color="primary"></ion-checkbox>i agree with Terms And Conditions Icon
-    </ion-label>
+  
+<div class="checkbox-css">
+  <input type="checkbox" >
+  <label for="vehicle1"> &nbsp; i agree with Terms And Conditions Icone</label>
 
-  </ion-item>
-  <div>
+</div>
+   
 
-  </div>
-  <div align="center" class="mt-5">
+   <div align="center" class="mt-5">
 
-    <ion-button fill="outline" class="sign-up" (click)="submit()">Sign Up</ion-button>
+    <ion-button fill="outline" class="sign-up" (click)="goToOtp()">Sign Up</ion-button>
 
   </div>
 
 </ion-content>
+
+<ion-footer  align="center">
+  <ion-toolbar>
+    <ion-title>i havee an <span class="account-radius" (click)="goToLogin()">account</span></ion-title>
+  </ion-toolbar>
+</ion-footer>

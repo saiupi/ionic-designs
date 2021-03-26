@@ -18,6 +18,6 @@ export class EnterOtpPage implements OnInit {
     
   }
   goToBack(){
-    this.router.navigate(['/forgot-password']); 
+    this.router.navigate(['/singup']); 
   }
 }
