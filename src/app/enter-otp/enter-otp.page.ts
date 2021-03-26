@@ -12,9 +12,12 @@ export class EnterOtpPage implements OnInit {
 
   ngOnInit() {
   }
-otp(){
+  otp(){
 
-    this.router.navigate(['/login']);
-  
-}
+      this.router.navigate(['/login']);
+    
+  }
+  goToBack(){
+    this.router.navigate(['/forgot-password']); 
+  }
 }
