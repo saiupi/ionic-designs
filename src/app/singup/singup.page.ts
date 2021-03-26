@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
 @Component({
   selector: 'app-singup',
@@ -7,10 +8,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./singup.page.scss'],
 })
 export class SingupPage implements OnInit {
-
-  constructor(private router: Router) { }
-
+  base64Image: string;
+  constructor(private router: Router,private camera: Camera) { }
   ngOnInit() {
+
+  
+  }
+  takePictures = () => {
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.FILE_URI,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+    }
+    this.camera.getPicture(options).then((imageData) => {
+      this.base64Image = 'data:image/jpeg;base64,' + imageData;
+      console.log(this.base64Image,"images")
+     }, (err) => {
+      console.log(err,"images")
+     });
   }
   goToBack(){
     this.router.navigate(['/home']);
@@ -24,6 +40,6 @@ export class SingupPage implements OnInit {
     this.router.navigate(['/login']);
 
   }
- 
+  
 
 }

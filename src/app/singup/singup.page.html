@@ -5,11 +5,14 @@
 </ion-header> -->
 
 <ion-content padding="true">
-  <div (click)="goToBack()" class="goToBack">
+  <div (click)="goToBack()" class="goToBack" *ngIf="!base64Image">
     <ion-button shape="round" fill="outline">BACK</ion-button>
   </div>
-  <div align="center" class="camera-css">
+  <div align="center" class="camera-css" (click)="takePictures()" >
     <ion-icon name="camera-outline"></ion-icon>
+  </div>
+  <div align="center" class="camera-css" >
+    <img [src]="base64Image" *ngIf="base64Image" />
   </div>
   <ion-item>
     <ion-label position="floating">NAME</ion-label>
